@@ -1,0 +1,20 @@
+1) Algorithm 
+
+I have implemented Thompson sampling aldorithm beacuse it is most general algorithm and gives minimum regret for large horizon. Pseudo code from the paper is gives as 
+
+-----------------------------------------------------------------------------------------------------------------
+Algorithm :- Thompson Sampling for Bernoulli bandits
+-----------------------------------------------------------------------------------------------------------------
+		
+		For each arm i = 1, . . . , N set Si = 0, Fi = 0.
+		foreach t = 1, 2, . . . , do
+			For each arm i = 1, . . . , N, sample θi(t) from the Beta(Si + 1, Fi + 1) distribution.
+			Play arm i(t) := arg maxi θi(t) and observe reward rt.
+			If r = 1, then Si(t) = Si(t) + 1, else Fi(t) = Fi(t) + 1.
+		end
+------------------------------------------------------------------------------------------------------------------
+
+2. References
+
+I have used external code for beta distribution sampling used in Thompson sampling. Github link is provided below.
+https://gist.github.com/sftrabbit/5068941
