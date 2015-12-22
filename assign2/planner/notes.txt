@@ -1,0 +1,9 @@
+Used value iteration method.
+
+The set of equations to solve:
+V(S) = T(S,a,S')[R(S,a,S')+gamma*V(S')] , for all S.
+
+I initialized all the RHS to some guessed value, to estimate the LHS.
+The new V(S) values are then plugged back in the RHS, to update the new 
+V(S) values. This process is repeated until the difference between old V(S)
+and new V(S) values falls below a minimum threshold. 

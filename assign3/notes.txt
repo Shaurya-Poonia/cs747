@@ -1,0 +1,7 @@
+I tried SARSA-onPolicy,SARSA-offPolicy and TD(0). Both SARSA-onPolicy and TD(0) are giving same results but SARSA-offPolicy gives both good and bad results for different states. Hence i decided on SARSA-onPolicy or TD(0). Both are there in code.
+
+Other option was to make a model based on data and then solve the bellman's equation. But None of the solutions can give exact solutions(Because the model will be empirical not real) thus i finally left it to TD(0) only. 
+
+I am using alpha value to be 0.0125 which i tuned by plotting the graph for different alpha values.
+
+No code from outside was used for this.
